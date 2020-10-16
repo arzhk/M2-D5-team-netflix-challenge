@@ -171,3 +171,24 @@ a:hover {
 .d-none-i {
   display: none !important;
 }
+
+.modal-header {
+  background-color: #080808;
+  color: #f3f3f3;
+  border: none;
+}
+
+.modal-body {
+  background-color: #322e2d;
+  color: #c2c2c2;
+  border: none;
+}
+
+.modal-footer {
+  background-color: #322e2d;
+  border: none;
+}
+
+.modal-header .close {
+  color: #fff;
+}
