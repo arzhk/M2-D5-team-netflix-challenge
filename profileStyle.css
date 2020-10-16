@@ -27,11 +27,11 @@ body {
 #userName {
   background-color: #666666;
   color: #f3f3f3;
-  width: 20em;
   border: none;
   border-radius: 0px;
   font-size: 15px;
   padding: 20px 10px;
+  max-width: 20em;
 }
 
 select {
@@ -121,4 +121,13 @@ option {
 
 .logo {
   height: 50px;
+}
+
+@media (max-width: 768px) {
+  .control-btn {
+    width: 60%;
+  }
+  h1 {
+    font-size: 3rem !important;
+  }
 }
