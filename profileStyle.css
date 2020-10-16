@@ -2,4 +2,112 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
+	background: rgb(0, 0, 0);
+	/*	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(42, 42, 42, 1) 12%,
+		rgba(42, 42, 42, 1) 100%
+    );*/
+	background-color: #0e0e0e;
 }
+* {
+	color: whitesmoke;
+	font-family: "open sans";
+	font-size: 1.3vw;
+	font-weight: 600;
+}
+
+#userName {
+	background-color: #666666;
+	color: whitesmoke;
+	width: 18em;
+}
+
+select {
+	margin-top: 1rem;
+	background-color: black;
+	border-style: solid;
+	border-width: thin;
+	border-color: white;
+}
+
+select:hover {
+	background-color: #2c2c2c;
+}
+
+.btn {
+	border-style: solid;
+	border-width: thin;
+	border-color: grey;
+	color: grey;
+	border-radius: 0;
+	padding: 0.5em 1.5em;
+}
+
+.btn:hover {
+	border-color: white;
+	color: white;
+}
+
+.btn:disabled {
+	color: white;
+	opacity: 100%;
+	background-color: #333333;
+}
+
+#maturity {
+	padding: 0;
+	border: solid;
+	border-color: #333333;
+}
+
+/*.disabled {
+	color: whitesmoke;
+}*/
+
+#save {
+	background-color: white;
+	color: #141414;
+}
+
+#save:hover {
+	background-color: red;
+	border-color: red;
+	color: white;
+}
+
+#profilePic {
+	padding: 0;
+	margin: 0;
+}
+#profilePicture {
+	margin: 0;
+	padding: 0;
+	padding-left: 1.5vw;
+}
+
+.topLined {
+	padding-top: 1em;
+	border-top-style: solid;
+	border-top-color: white;
+	border-top-width: 1px;
+}
+
+#controls > * {
+	font-weight: bold;
+}
+
+#username {
+	font-size: 15px;
+	margin-top: 13px;
+}
+/*#title {
+	padding: 0;
+	margin-bottom: 1rem;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 0.1px;
+}
+hr {
+}*/
