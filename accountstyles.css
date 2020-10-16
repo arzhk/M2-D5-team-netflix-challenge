@@ -17,3 +17,84 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+
+a {
+  color: #c2c2c2;
+}
+
+a:hover {
+  color: #f3f3f3;
+}
+
+.navbar {
+  height: 58px;
+}
+
+.darkGreyBG {
+  background-color: #080808;
+}
+
+.offWhiteTxt {
+  color: #f3f3f3;
+}
+
+.logo {
+  height: 34px;
+}
+
+.dropdown-menu {
+  background-color: #080808;
+  border-radius: 0px;
+  margin-left: -60px;
+}
+
+.dropdown-item {
+  color: #f3f3f3;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.dropdown-item:hover {
+  background-color: #080808;
+  color: #c2c2c2;
+  text-decoration: underline;
+}
+
+.nav-border-b {
+  border-bottom: 1px solid #322e2d;
+}
+
+.search-icon {
+  font-size: 20px;
+}
+
+#search-input {
+  padding: 8px 8px 8px 34px;
+  background-color: #080808;
+  border: 1px solid #322e2d;
+  outline: none;
+  color: #f3f3f3;
+}
+
+#search-input:focus {
+  border: 1px solid #f3f3f3;
+}
+
+.fa-search-input {
+  color: #f3f3f3;
+  position: absolute;
+  margin: 14px 0px 0px 10px;
+}
+
+#search-input::placeholder {
+  font-size: 14px;
+}
+
+.dropdown-container {
+  width: 180px;
+}
+
+#username {
+  font-size: 15px;
+  margin-top: 13px;
+}
