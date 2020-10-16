@@ -53,22 +53,22 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   font-family: Netflix Sans;
+   color: var(--text-color)
  }
 
  body{
   background: var(--bg-color);
-  font-family: "Open Sans", sans-serif;
    width: 100%;
  }
 
  main{
    margin: 0.5rem 6rem;
-   color: var(--text-color);
  }
 
  .movie-section{
   height: 300px;
-  position: relative;
+
  }
 
  h2{
@@ -88,47 +88,14 @@ footer {
    line-height: 50px;
  }
 
- .icons i{
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: var(--footer-color);
- }
 
-.img-row{
-  overflow: scroll;
-  position: relative;
-    user-select: none;
-    pointer-events: none;
-  
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
-.next{
-  position: absolute;
-  cursor: pointer;
-  height: 74%!important;
-  display: flex;
-  width: 200px;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 15px;
-  font-size: 52px;
-  color: rgba(255,255,255,0.2);
-  bottom: 25px;
-  background: linear-gradient(90deg, rgba(0,0,0,0.1)  25%, rgba(255,255,255,0.1) 100%);
-  right: -55px;
-}
  .img-wrapper:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
  }
 
 
- /* ========== NavBar Style ===========*/
+ /* == NavBar Style */
  a {
   color: #c2c2c2;
 }
