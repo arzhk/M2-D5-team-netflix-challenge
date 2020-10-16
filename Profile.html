@@ -1,137 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-			crossorigin="anonymous"
-		/>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-		<!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-		<!--Fonts-->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<!--Aaron css-->
-		<link rel="stylesheet" href="accountstyle.css" />
-		<!--mycss-->
-		<link rel="stylesheet" href="profileStyle.css" />
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-			crossorigin="anonymous"
-		></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Aaron css-->
+    <link rel="stylesheet" href="accountstyle.css" />
+    <!--mycss-->
+    <link rel="stylesheet" href="profileStyle.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
-		<title>Edit profile</title>
-	</head>
-	<body>
-		<!--NAVBAR BEGIN-->
-		<nav class="navbar navbar-expand-lg darkGreyBG">
-			<a class="navbar-brand" href="#"
-				><img class="logo img-fluid" src="assets/netflix-logo.png"
-			/></a>
-			<button
-				class="navbar-toggler d-lg-none"
-				type="button"
-				data-toggle="collapse"
-				data-target="#collapsibleNavId"
-				aria-controls="collapsibleNavId"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavId"></div>
-		</nav>
-		<!--NAVBAR END-->
-		<div id="profile" class="container">
-			<div class="row" id="title">
-				<div class="col">
-					<h1>Edit Profile</h1>
-					<hr />
-				</div>
-			</div>
-			<div class="row topLined">
-				<div id="profilePicture" class="col col-1">
-					<img
-						id="profilePic"
-						src="assets/striveschool-logo.png"
-						class="img-fluid img-thumbnail"
-					/>
-				</div>
-				<div id="formInputs" class="col-11 form-group">
-					<input
-						id="userName"
-						class="form-control"
-						type="text"
-						value="Strive Student"
-					/>
-					<select id="language">
-						<option>English</option>
-						<option>Italian</option>
-						<option>Spanish</option>
-						<option>Turkish</option>
-					</select>
-					<div class="topLined">
-						<h4 id="maturityLabel">Maturity Settings:</h4>
-						<button
-							id="maturity"
-							class="btn btn-lg"
-							value="ALL MATURITY RATINGS"
-							disabled
-						>
-							ALL MATURITY RATINGS
-						</button>
-						<p id="ratingDescription"></p>
-						<button value="EDIT" class="btn">EDIT</button>
-					</div>
-					<div class="topLined">
-						<h4 id="autoplayControlsLabel">Autoplay controls</h4>
-						<div class="form-check">
-							<input
-								id="checkAutoplayNext"
-								class="form-check-input"
-								type="checkbox"
-							/>
-							<label for="checkAutoplayNext"
-								>Autoplay next episode in a series on all devices</label
-							>
-						</div>
-						<div class="form-check">
-							<input
-								id="checkAutoplayPreview"
-								class="form-check-input"
-								type="checkbox"
-							/>
-							<label for="checkAutoplayNext"
-								>Autoplay Previews while browsing on all devices</label
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="controls" class="topLined">
-				<button id="save" class="btn">SAVE</button>
-				<button class="btn">CANCEL</button>
-				<button class="btn">DELETE PROFILE</button>
-			</div>
-		</div>
-	</body>
+    <title>Edit profile</title>
+  </head>
+  <body>
+    <!--NAVBAR BEGIN-->
+    <nav class="navbar navbar-expand-lg darkGreyBG">
+      <a class="navbar-brand" href="#"
+        ><img class="logo img-fluid" src="assets/netflix-logo.png"
+      /></a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId"></div>
+    </nav>
+    <!--NAVBAR END-->
+    <section id="edit-profile">
+      <div id="profile" class="container px-5 py-5">
+        <div class="row" id="title">
+          <div class="col">
+            <h1>Edit Profile</h1>
+          </div>
+        </div>
+        <div class="row topLined py-4">
+          <div id="profilePicture" class="col-2">
+            <img
+              id="profilePic"
+              src="assets/striveschool-logo.png"
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div id="formInputs" class="col-9 form-group mb-0">
+            <input
+              id="userName"
+              class="form-control"
+              type="text"
+              value="Strive Student"
+            />
+            <h5 class="mb-2 mt-5 greyTxt">Language:</h5>
+            <select id="language" class="mt-0 pl-1 pr-4 py-1">
+              <option>English</option>
+              <option>Italian</option>
+              <option>Spanish</option>
+              <option>Turkish</option>
+            </select>
+            <div class="topLined my-4">
+              <h4 id="maturityLabel" class="my-4 greyTxt">
+                Maturity Settings:
+              </h4>
+              <button
+                id="maturity"
+                class="btn btn-lg py-1 px-3"
+                value="ALL MATURITY RATINGS"
+                disabled
+              >
+                ALL MATURITY RATINGS
+              </button>
+              <p id="ratingDescription" class="mt-3 mb-4 py-0">
+                Show titles of all maturity ratings for this profile.
+              </p>
+              <button value="EDIT" class="btn py-2 px-4 spaced-txt">
+                EDIT
+              </button>
+            </div>
+            <div class="topLined">
+              <h4 id="autoplayControlsLabel" class="greyTxt">
+                Autoplay controls
+              </h4>
+              <div class="form-check">
+                <input
+                  id="checkAutoplayNext"
+                  class="form-check-input"
+                  type="checkbox"
+                />
+                <label for="checkAutoplayNext"
+                  >Autoplay next episode in a series on all devices</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  id="checkAutoplayPreview"
+                  class="form-check-input"
+                  type="checkbox"
+                />
+                <label for="checkAutoplayNext"
+                  >Autoplay Previews while browsing on all devices</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls" class="topLined">
+          <div class="row">
+            <div class="col-12">
+              <button
+                id="save"
+                class="btn mx-0 py-2 px-2 mr-md-2 px-md-4 spaced-txt"
+              >
+                SAVE
+              </button>
+              <button class="btn mx-0 py-2 px-2 mx-md-2 px-md-4 spaced-txt">
+                CANCEL
+              </button>
+              <button class="btn mx-0 py-2 px-2 ml-md-2 px-md-4 spaced-txt">
+                DELETE PROFILE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
