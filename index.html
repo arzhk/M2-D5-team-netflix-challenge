@@ -21,7 +21,7 @@
   <main>
     <!--**************** NAVBAR SECTION ****************-->
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#"><img class="logo img-fluid" src="\assets\netflix-logo.png" /></a>
+      <a class="navbar-brand" href="./index.html"><img class="logo img-fluid" src="\assets\netflix-logo.png" /></a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
             <a class="nav-link mx-1" href="#">My List</a>
           </li>
         </ul>
-        <div id="search-bar">
+        <div id="search-bar" class="d-none">
           <i class="fas fa-search fa-search-input"></i>
           <input type="text" id="search-input" placeholder="Titles, people, genre" />
         </div>
@@ -65,8 +65,8 @@
               aria-haspopup="true" aria-expanded="false"><img class="logo img-fluid ml-1 mr-1"
                 src="\assets\striveschool-logo.png" /></a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item pb-1 nav-border-b pl-3" href="#">Manage Profiles</a>
-              <a class="dropdown-item font-weight-bold pb-1 pl-3" href="#">Account</a>
+              <a class="dropdown-item pb-1 nav-border-b pl-3" href="./Profile.html">Manage Profiles</a>
+              <a class="dropdown-item font-weight-bold pb-1 pl-3" href="./account.html">Account</a>
               <a class="dropdown-item font-weight-bold pb-1 pl-3" href="#">Help Centre</a>
               <a class="dropdown-item font-weight-bold pb-1 pl-3" href="#">Sign out of Netflix</a>
             </div>
@@ -74,6 +74,7 @@
         </div>
       </div>
     </nav>
+    <!-- =======================TV Shows==================== -->
     <section class="d-flex mt-5 ">
       <div class="d-flex">
         <h1 class="font-weight-bolder">TV Shows </h1>
@@ -106,7 +107,7 @@
         </div>
       </div>
     </section>
-
+    <!-- ==================Trending Now============================ -->
     <section class="mt-4 movie-section">
       <h2 class="font-weight-bolder">Trending Now</h2>
       <div class="d-flex img-row mt-3">
@@ -145,11 +146,13 @@
             src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="img">
         </div>
-
-
-
+      </div>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
       </div>
     </section>
+
+    <!-- ====================Watch It Again ===================== -->
     <section class="mt-4 movie-section ">
       <h2 class="font-weight-bolder">Watch It Again</h2>
       <div class="d-flex img-row mt-3">
@@ -188,11 +191,13 @@
             src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="img">
         </div>
-
-
-
+      </div>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
       </div>
     </section>
+
+    <!-- ========================New Releases================= -->
     <section class="mt-4 movie-section ">
       <h2 class="font-weight-bolder">New Releases</h2>
       <div class="d-flex img-row mt-3">
@@ -235,6 +240,9 @@
 
 
       </div>
+      <div class="next">
+        <i class="fas fa-chevron-right"></i>
+      </div>
     </section>
 
   </main>
@@ -244,12 +252,12 @@
   <footer class="container font-small ">
     <div class="icons">
       <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-twitter-square"></i>
-      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram-square ml-4"></i>
+      <i class="fab fa-twitter-square ml-4"></i>
+      <i class="fab fa-youtube ml-4"></i>
     </div>
     <section class="row mb-3">
-      <div class="col col-md-3 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <ul class="list-unstyled list-inline">
           <li>Audio and Subtities</li>
           <li>Media Center</li>
@@ -257,21 +265,21 @@
           <li>Contact Us</li>
         </ul>
       </div>
-      <div class="col col-md-3 col-lg-3 ">
+      <div class="col-sm-12 col-md-6 col-lg-3 ">
         <ul class="list-unstyled list-inline">
           <li>Audio Description</li>
           <li>Investors Relations</li>
           <li>Legal Notices</li>
         </ul>
       </div>
-      <div class="col col-md-3 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <ul class="list-unstyled list-inline">
           <li>Help Center</li>
           <li>Jobs</li>
           <li>Cookies Preferences</li>
         </ul>
       </div>
-      <div class="col col-md-3 col-lg-3">
+      <div class="col-sm-12 col-md-6 col-lg-3">
         <ul class="list-unstyled list-inline">
           <li>Gift Cards</li>
           <li>Terms Of use</li>
@@ -285,7 +293,7 @@
     <p class="mt-3">&#169; 1997-2020 Netflex, Inc. (i-sd8969sd66fs9d566) </p>
   </footer>
 
-
+  <script src="./index.js"> </script>
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
