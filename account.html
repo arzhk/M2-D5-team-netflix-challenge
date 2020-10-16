@@ -65,7 +65,7 @@
             <a class="nav-link mx-1" href="#">My List</a>
           </li>
         </ul>
-        <div id="search-bar">
+        <div id="search-bar" class="d-none">
           <i class="fas fa-search fa-search-input"></i>
           <input
             type="text"
@@ -78,18 +78,18 @@
             ><i class="fas fa-search"></i>
           </a>
         </li>
-        <div class="my-2 my-lg-0 mr-2 dropdown-container">
+        <div class="my-2 my-lg-0 mr-0 dropdown-container">
           <li class="nav-item d-inline-block">
             <p id="username" class="offWhiteTxt ml-3 my-auto d-inline-block">
               KIDS
             </p>
-            <a class="nav-link mx-1 px-2 d-inline-block" href="#"
+            <a class="nav-link mx-1 px-2 d-inline-block d-none-i" href="#"
               ><i class="fas fa-bell"></i>
             </a>
           </li>
           <li class="nav-item dropdown d-inline-block">
             <a
-              class="nav-link dropdown-toggle pl-0"
+              class="nav-link dropdown-toggle px-0"
               href="#"
               id="dropdownId"
               data-toggle="dropdown"
@@ -127,7 +127,7 @@
 
         <!-- MEMBERSHIP AND BILLING -->
         <div class="row pt-3 main-row-bold">
-          <div class="col-4 pr-0">
+          <div class="col-4 px-0">
             <h3>MEMBERSHIP & BILLING</h3>
             <input
               type="button"
@@ -137,28 +137,31 @@
           </div>
           <div class="col-8">
             <div class="row main-row">
-              <div class="col-6">
+              <div class="col-6 pb-2">
                 <h6 class="font-weight-bold">Student@strive.school</h6>
-                <p>Password: **********</p>
-                <p>Phone: 321 044 1279</p>
+                <p class="my-2">Password: **********</p>
+                <p class="my-2">Phone: 321 044 1279</p>
               </div>
-              <div class="col-6 text-right">
+              <div class="col-6 pb-2 text-right">
                 <a class="d-block" href="#">Change account email</a>
                 <a class="d-block" href="#">Change password</a>
                 <a class="d-block" href="#">Change phone number</a>
               </div>
             </div>
-            <div class="row">
+            <div class="row py-3 main-row">
               <div class="col-6">
-                <i class="fab fa-paypal d-inline-block">Paypal</i>
-                <h6 class="d-inline-block">admin@strive.school</h6>
+                <i class="fab fa-paypal d-inline-block"></i>
+                <h6 class="alt-font d-inline-block">PayPal</h6>
+                <h6 class="d-inline-block font-weight-bold ml-3">
+                  admin@strive.school
+                </h6>
               </div>
               <div class="col-6 text-right">
                 <a class="d-block" href="#">Update payment info</a>
                 <a class="d-block" href="#">Billing details</a>
               </div>
             </div>
-            <div class="row">
+            <div class="row py-3">
               <div class="col-12 text-right">
                 <a class="d-block" href="#">Redeem gift card or promo code</a>
                 <a class="d-block" href="#">Where to buy gift cards</a>
@@ -168,31 +171,29 @@
         </div>
 
         <!-- PLAN DETAILS -->
-        <div class="row">
-          <div class="col-4 pr-0">
-            <h3>PLAN DETAILS</h3>
+        <div class="row main-row-single py-3">
+          <div class="col-4 px-0 my-auto">
+            <h3 class="my-0">PLAN DETAILS</h3>
           </div>
-          <div class="col-8">
-            <div class="row main-row">
-              <div class="col-6">
-                <h6 class="font-weight-bold">
-                  Premium<span>ULTRA <span>HD</span></span>
-                </h6>
-              </div>
-              <div class="col-6 text-right">
-                <a class="d-block" href="#">Change Plan</a>
-              </div>
-            </div>
+          <div class="col-6 my-auto">
+            <h6 class="font-weight-bold my-0">
+              Premium<span class="font-weight-light border-span"
+                >ULTRA <span class="font-weight-bold">HD</span></span
+              >
+            </h6>
+          </div>
+          <div class="col-2 text-right">
+            <a class="d-block" href="#">Change Plan</a>
           </div>
         </div>
 
         <!-- SETTINGS -->
-        <div class="row">
-          <div class="col-4 pr-0">
+        <div class="row main-row py-3">
+          <div class="col-4 px-0">
             <h3>PLAN DETAILS</h3>
           </div>
           <div class="col-8">
-            <div class="row main-row">
+            <div class="row">
               <div class="col-6">
                 <a class="d-block" href="#">Parental controls</a>
                 <a class="d-block" href="#">Test participation</a>
@@ -206,21 +207,23 @@
         </div>
 
         <!-- MY PROFILE -->
-        <div class="row">
-          <div class="col-4 pr-0">
+        <div class="row py-3">
+          <div class="col-4 px-0">
             <h3>MY PROFILE</h3>
           </div>
           <div class="col-8">
-            <div class="row main-row">
+            <div class="row">
               <div class="col-6">
                 <img src="assets/striveschool-logo.png" class="img-fluid" />
-                <h6 class="d-inline-block font-weight-bold">Strive Student</h6>
+                <h6 class="d-inline-block font-weight-bold ml-2">
+                  Strive Student
+                </h6>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-right">
                 <a class="d-block" href="#">Manage profiles</a>
                 <a class="d-block" href="#">Add profile email</a>
               </div>
-              <div class="row">
+              <div class="row full px-3">
                 <div class="col-6">
                   <a class="d-block" href="#">Language</a>
                   <a class="d-block" href="#">Playback settings</a>

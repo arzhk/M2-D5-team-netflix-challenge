@@ -26,6 +26,8 @@ a:hover {
   color: #f3f3f3;
 }
 
+/* NAVBAR STYLING */
+
 .navbar {
   height: 58px;
 }
@@ -97,4 +99,75 @@ a:hover {
 #username {
   font-size: 15px;
   margin-top: 13px;
+}
+
+/* ACCOUNT PAGE STYLING */
+
+#account-info img {
+  width: 32px;
+}
+
+#account-info a {
+  color: #41aaff;
+  margin: 4px 0px;
+}
+
+#account-info h3 {
+  color: #999;
+  font-size: 1.4em;
+}
+
+#account-info p {
+  color: #999;
+}
+
+#account-info .main-row {
+  border-bottom: 1px solid #999;
+}
+
+#account-info .main-row-single {
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+#account-info .main-row-bold {
+  border-top: 1px solid #999;
+}
+
+#account-info input {
+  border-bottom: 1px solid #d1d1d1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 12px 4em;
+  border-radius: 2px;
+  font-size: 13px;
+  min-width: 98px;
+  min-height: 37px;
+}
+
+#account-info input:hover {
+  background-color: #f3f3f3;
+}
+
+#account-info .border-span {
+  border: 2px solid #212529;
+  border-radius: 6px;
+  padding: 0px 4px;
+  margin-left: 5px;
+}
+
+#account-info .full {
+  min-width: 100%;
+}
+
+.alt-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.d-none-i {
+  display: none !important;
 }
